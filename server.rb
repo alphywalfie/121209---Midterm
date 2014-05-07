@@ -27,7 +27,7 @@ post '/save' do
 end
 
 get '/show/:id' do
-	index = params[:id]
+	index = params[:id].to_f
 	@expense = expenses[index - 1]
 	erb :show
 end
