@@ -1,0 +1,11 @@
+<html>
+	<head>
+	</head>
+	
+	<body>
+	<ul>
+		<%= @expenses.each do |expense| %>
+			<li> <a href = "show/:id"> <%= expense.id %><%= expense.item %><%= expense.amount %></li></a>
+		<% end %>
+	</ul>
+	</body>
